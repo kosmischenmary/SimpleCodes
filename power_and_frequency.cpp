@@ -17,7 +17,7 @@ inline float rapl(string path){
 int main (int argc, char *argv[]){
 	int control;
 	if(argc == 1){
-		cout << "Determine o tempo em segundos:";
+		cout << "Runtime in seconds:";
 		cin >> control;
 	}else if(argc >= 2){
 		control = stoi(argv[1]);
