@@ -1,3 +1,3 @@
 Hello!
-This repository is destinated to few solutions.
+This repository is destinated to some solutions.
 Feel free to use them.
