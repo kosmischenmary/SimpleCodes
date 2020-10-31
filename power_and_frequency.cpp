@@ -22,12 +22,13 @@ int main (int argc, char *argv[]){
 	}else if(argc >= 2){
 		control = stoi(argv[1]);
 	}
+	//Paths to rapl's energy files
+	//They must change depending on the architecture
 	string path_core = "/sys/class/powercap/intel-rapl:0:0/energy_uj";
 	string path_uncore = "/sys/class/powercap/intel-rapl:0:1/energy_uj";
 	string path_dram = "/sys/class/powercap/intel-rapl:0:2/energy_uj";
 	string path_pack = "/sys/class/powercap/intel-rapl:0/energy_uj";
 	string path_cpuinfo = "/proc/cpuinfo";
-	//string path_meminfo = "/proc/meminfo";
 	float core_0, core_1, uncore_0, uncore_1, dram_0, dram_1, pack_0, pack_1; float a;
 	string aux, aux2;
 	ofstream file("result.txt");
